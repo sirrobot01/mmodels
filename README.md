@@ -33,7 +33,8 @@
      Usage
      
      
-     M = MultiModels(n_models=2) 
+      M = MultiModels(n_models=2)
+     
      
    **This uses '2' models**
      
@@ -48,7 +49,7 @@
     **Example**
     
     
-    M = MultiModels(n_models=2, typeof='clf)
+      M = MultiModels(n_models=2, typeof='clf)
     
 
 #### Methods
