@@ -28,7 +28,7 @@
 
 ##### Arguments
 
-- *n_models*: Number of models to use
+- **n_models**: Number of models to use
 
      Usage
      
