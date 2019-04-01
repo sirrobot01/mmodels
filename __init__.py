@@ -21,6 +21,7 @@ class MultiModel:
             from sklearn.naive_bayes import GaussianNB
             from sklearn.svm import SVC
             from sklearn.linear_model import SGDClassifier
+            from sklearn.linear_model import LogisticRegression
 
             self.models = {
                 'KNN': KNeighborsClassifier(n_neighbors=1),
@@ -32,12 +33,13 @@ class MultiModel:
                 "SVM": SVC(kernel="linear"),
                 "Naive_bayes": GaussianNB(),
                 'SGDPerceptron': SGDClassifier(loss='perceptron'),
+                'LogisticRegression': LogisticRegression(),
                 'ExtraTrees': ExtraTreesClassifier(n_estimators=100, max_depth=4, random_state=0)
             }
 
 
         elif self.typeof == 'regr':
-            from sklearn.linear_model import LogisticRegression
+      
             from sklearn.neighbors import KNeighborsRegressor
             from sklearn.linear_model import LinearRegression
             from sklearn.linear_model import Ridge
@@ -45,7 +47,7 @@ class MultiModel:
             from sklearn.tree import DecisionTreeRegressor
 
             self.models = {
-                'LogisticRegression': LogisticRegression(),
+      
                 'KNNRegressor': KNeighborsRegressor(n_neighbors=3),
                 'LinearRession': LinearRegression(),
                 'Ridge': Ridge(),
